@@ -43,13 +43,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 
-<!-- 
+<!--
     <script type="text/javascript" src="./js/ga.js"></script>
   -->
 
 
 
-  <link rel="exhibit/data" 
+  <link rel="exhibit/data"
   type="application/jsonp"
   href="https://spreadsheets.google.com/feeds/cells/18R5dMkVBRzjVj1m_OkdGzaHwKJt7mzvT53PoqwrYiB4/ose35q8/public/basic?alt=json-in-script"
   ex:converter="googleSpreadsheets" />
@@ -88,7 +88,7 @@
    <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           <!--
           <a class="navbar-brand logo" href="./index.html">
           <img style="max-width:100px; margin-top: 7px;"  src="./img/pitrusino.png">
@@ -112,7 +112,7 @@
                                 <li><a href="./ambiente.html">Ambiente e sviluppo sostenibile</a></li>
                                 <li><a href="./welfare.html">Welfare e diritti</a></li>
                                 <li><a href="./pace_disarmo_cooperazione.html">Cooperazione, pace e disarmo</a></li>
-                                <li><a href="./altra_economia.html">Altraeconomia</a></li> 
+                                <li><a href="./altra_economia.html">Altraeconomia</a></li>
                             </ul>
                     <li>
                         <a href="./infografica.html">Infografica</a>
@@ -138,12 +138,12 @@
   <div class="row clearfix">
     <div class="col-md-12 column">
       <div class="jumbotron">
-      
+
         <div class="page-header"> <h1>
           <span class="fa-stack fa-4x tutto">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-balance-scale fa-stack-1x fa-inverse"></i>
-          </span> 
+          </span>
        Tutte le proposte </h1></div>
         </p>
 
@@ -153,15 +153,15 @@
 <div id="scaricatab">
                 <span class="fa-stack">
                   <a href="./rapporto2016/Tavola_Finale_Rapporto_Sbilanciamoci_2016.jpg"> <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-download  fa-stack-1x fa-inverse"></i></span></a> 
-             
-                <a href="./rapporto2016/Tavola_Finale_Rapporto_Sbilanciamoci_2016.jpg" style="text-decoration: none" class="scarica">Scarica la tavola finale delle proposte di Sbilanciamoci! per il 2016</a>
-            </div>  
- 
+                <i class="fa fa-download  fa-stack-1x fa-inverse"></i></span></a>
+
+                <a href="./rapporto2017/Tavola_Finale_Rapporto_Sbilanciamoci_2017.jpg" style="text-decoration: none" class="scarica">Scarica la tavola finale delle proposte di Sbilanciamoci! per il 2016</a>
+            </div>
+
 
         </div>
 
-      </div>    
+      </div>
 
 
     <div class="row clearfix">
@@ -170,16 +170,16 @@
         <div ex:role="viewPanel" style="padding: 0in;">
 
 
-          <div ex:role="exhibit-view" 
-          ex:viewClass="Exhibit.TabularView"  
-          ex:label="Table"  
-          ex:columns=".ID,.Categoria,.Sottocategoria,.label,.Entrate,.Spese"  
+          <div ex:role="exhibit-view"
+          ex:viewClass="Exhibit.TabularView"
+          ex:label="Table"
+          ex:columns=".ID,.Categoria,.Sottocategoria,.label,.Entrate,.Spese"
           ex:columnLabels="id,Categoria,Sottocategoria,Proposte,Entrate (mln di €),Uscite (mln di €)"
           ex:columnFormats="number,list,list,list,list,list"
           ex:sortColumn="0"
           ex:sortAscending="true"
           ex:tableStyler="tableStyler"
-          ex:rowStyler="rowStyler"> 
+          ex:rowStyler="rowStyler">
           <div ex:role="exhibit-lens">
             <div class="table-responsive">
               <table class="table" ex:class-content=".territorio">
@@ -192,7 +192,7 @@
                   <!-- Shows tip if Descrizione exists -->
                       <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onmouseover-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,OFFSETX, -200,OFFSETY, -50, CLICKSTICKY, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
                       <!-- only if Descrizione not exists -->
-                     
+
                     <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
                   </td>
                   <td><span ex:content=".Entrate"></span></td>
@@ -202,7 +202,7 @@
             </div>
 
           </div>
-        </div>      
+        </div>
 
       </div>
 
@@ -220,7 +220,7 @@ Questo sito è stato realizzato e donato da <a href="http://ondata.it" target><i
 </div>
 <script>
 $(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
+  $('[data-toggle="popover"]').popover();
 });
 </script>
 </body>
