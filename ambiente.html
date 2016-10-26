@@ -43,13 +43,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 
-<!-- 
+<!--
     <script type="text/javascript" src="./js/ga.js"></script>
   -->
 
 
 
-  <link rel="exhibit/data" 
+  <link rel="exhibit/data"
   type="application/jsonp"
   href="https://spreadsheets.google.com/feeds/cells/18R5dMkVBRzjVj1m_OkdGzaHwKJt7mzvT53PoqwrYiB4/okpnh0h/public/basic?alt=json-in-script"
   ex:converter="googleSpreadsheets" />
@@ -72,8 +72,8 @@
    <div class="container">
      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
-        
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -92,7 +92,7 @@
                                 <li><a href="./ambiente.html">Ambiente e sviluppo sostenibile</a></li>
                                 <li><a href="./welfare.html">Welfare e diritti</a></li>
                                 <li><a href="./pace_disarmo_cooperazione.html">Cooperazione, pace e disarmo</a></li>
-                                <li><a href="./altra_economia.html">Altraeconomia</a></li> 
+                                <li><a href="./altra_economia.html">Altraeconomia</a></li>
                             </ul>
                     <li>
                         <a href="./infografica.html">Infografica</a>
@@ -121,12 +121,12 @@
   <div class="row clearfix">
     <div class="col-md-12 column">
       <div class="jumbotron">
-      
+
         <div class="page-header"> <h1 class="ambiente">
           <span class="fa-stack fa-4x ambiente">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="fa fa-leaf fa-stack-1x fa-inverse"></i>
-          </span> 
+          </span>
        Ambiente e sviluppo sostenibile</h1></div>
           <p><b>Lo sviluppo intelligente è ecologicamente sostenibile</b>. Sono cinque gli assi in cui si articolano le proposte di Sbilanciamoci! sull’ambiente e la sostenibilità dello sviluppo, con un totale di entrate statali pari a 2,6 miliardi di euro e uscite per poco meno di 2 miliardi. In primo luogo si propone una sensibile riduzione, pari a 1,5 miliardi di euro, degli stanziamenti pubblici per le grandi opere – come Tav e Mose – che sono costosissime e altamente impattanti, e di destinare invece 1 miliardo di euro a investimenti capillari su piccole e medie opere utili per il Paese. </p>
 <p>In secondo luogo, si chiede di attuare una strategia di adattamento ai cambiamenti energetici e climatici fondata sull’abbattimento delle emissioni di gas climalteranti e l’adozione di scelte energetiche lungimiranti e responsabili. Sbilanciamoci! propone di implementare diverse misure, tra cui una tassazione dei veicoli legata all’emissione di CO<sub><span style="font-size: small;">2</sub> che colpisca i veicoli più potenti ed ecologicamente inefficienti come i Suv (500 milioni di entrate in più per lo Stato) e un sistema di incentivi rivolto a famiglie e piccole e medie imprese per l’installazione di impianti fotovoltaici (200 milioni di investimento). </p>
@@ -137,17 +137,19 @@
           </div>
 
 <div id="scaricatab">
-                <span class="fa-stack">
+                <!--
+								<span class="fa-stack">
                   <a href="./rapporto2016/ambiente.pdf"> <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-download  fa-stack-1x fa-inverse"></i></span></a> 
-             
+                <i class="fa fa-download  fa-stack-1x fa-inverse"></i></span></a>
+
                 <a href="./rapporto2016/ambiente.pdf" style="text-decoration: none" class="scarica">Scarica la sezione del Rapporto su Ambiente e sviluppo sostenibile</a>
-            </div>  
- 
+								-->
+            </div>
+
 
         </div>
 
-      </div>    
+      </div>
 
 
       <div class="row clearfix">
@@ -156,15 +158,15 @@
           <div ex:role="viewPanel" style="padding: 0in;">
 
 
-            <div ex:role="exhibit-view" 
-            ex:viewClass="Exhibit.TabularView"  
-            ex:label="Table"  
-            ex:columns=".label,.Entrate,.Spese"  
+            <div ex:role="exhibit-view"
+            ex:viewClass="Exhibit.TabularView"
+            ex:label="Table"
+            ex:columns=".label,.Entrate,.Spese"
             ex:columnLabels="Proposte,Entrate (mln di €),Uscite (mln di €)"
             ex:columnFormats="list,list"
             ex:sortColumn="0"
             ex:sortAscending="true"
-            ex:tableStyler="tableStyler"> 
+            ex:tableStyler="tableStyler">
             <div ex:role="exhibit-lens">
               <div class="table-responsive">
                 <table class="table" ex:class-content=".territorio">
@@ -175,7 +177,7 @@
                      <!-- Shows tip if Descrizione exists -->
                       <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onmouseover-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,OFFSETX, -200,OFFSETY, -50, CLICKSTICKY, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
                       <!-- only if Descrizione not exists -->
-                     
+
                       <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
                     </td>
                     <td><span ex:content=".Entrate"></span></td>
@@ -185,9 +187,9 @@
               </div>
 
             </div>
-          </div> 
+          </div>
 <!-- <img src='http://lorempixel.com/400/200/technics/'> -->
-     
+
 
      </div>
 
@@ -204,7 +206,7 @@ Questo sito è stato realizzato e donato da <a href="http://ondata.it" target><i
 </div>
 <script>
 $(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
+  $('[data-toggle="popover"]').popover();
 });
 </script>
 </body>

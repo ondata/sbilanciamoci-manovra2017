@@ -44,13 +44,13 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
 
-<!-- 
+<!--
     <script type="text/javascript" src="./js/ga.js"></script>
   -->
 
 
 
-  <link rel="exhibit/data" 
+  <link rel="exhibit/data"
   type="application/jsonp"
   href="https://spreadsheets.google.com/feeds/cells/18R5dMkVBRzjVj1m_OkdGzaHwKJt7mzvT53PoqwrYiB4/o89j2yb/public/basic?alt=json-in-script"
   ex:converter="googleSpreadsheets" />
@@ -73,7 +73,7 @@
    <div class="container">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> 
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
           <!--
           <a class="navbar-brand logo" href="./index.html">
           <img style="max-width:100px; margin-top: 7px;"  src="./img/pitrusino.png">
@@ -97,7 +97,7 @@
                                 <li><a href="./ambiente.html">Ambiente e sviluppo sostenibile</a></li>
                                 <li><a href="./welfare.html">Welfare e diritti</a></li>
                                 <li><a href="./pace_disarmo_cooperazione.html">Cooperazione, pace e disarmo</a></li>
-                                <li><a href="./altra_economia.html">Altraeconomia</a></li> 
+                                <li><a href="./altra_economia.html">Altraeconomia</a></li>
                             </ul>
                     <li>
                         <a href="./infografica.html">Infografica</a>
@@ -123,27 +123,29 @@
   <div class="row clearfix">
     <div class="col-md-12 column">
       <div class="jumbotron">
-      
+
         <div class="page-header"><h1 class="cooperazione">
           <span class="fa-stack fa-4x cooperazione">
             <i class="fa fa-circle fa-stack-2x text-primary"></i>
             <i class="icon-noun_122924_cc fa-stack-1x fa-inverse"></i>
-          </span> 
+          </span>
           Cooperazione, pace e disarmo</h1></div>
      <p>In una fase storica e geopolitica come quella attuale, l’obiettivo di <b>ridurre la spesa militare e investire sulle politiche di pace e cooperazione</b><i><b> </b></i>appare l’unico realmente praticabile per rimuovere in profondità le cause scatenanti dell’odio e della violenza tra i popoli e per contrastare la spirale distruttiva dell’autoritarismo, della corsa agli armamenti e della militarizzazione che si sta affermando all’interno delle nostre società. </p>
 <p>Sbilanciamoci! propone a tal fine di operare una riduzione delle spese militari, con un risparmio per la finanza pubblica di più di 4,5 miliardi di euro, sulla base di tre grandi misure: la riduzione del livello degli effettivi delle nostre Forze armate a 150mila unità e la contestuale eliminazione dell’istituto dell’ausiliaria, la diminuzione degli investimenti per i Programmi d’armamento attraverso l’azzeramento dei fondi iscritti al ministero per lo Sviluppo economico e messi a disposizione del ministero della Difesa – cosa che comporterebbe la cancellazione dell’acquisto dei cacciabombardieri F-35 e dei sommergibili U-212 –, il ritiro dalle missioni militari all’estero di chiara valenza aggressiva. </p>
 <p>Una parte delle risorse risparmiate attraverso la riduzione della spesa militare, quasi 500 milioni di euro, potrebbe essere utilizzata per finanziare politiche di pace e cooperazione internazionale e per una difesa civile e nonviolenta, con il potenziamento dell’Agenzia Italiana per la Cooperazione allo Sviluppo, l’adeguamento delle risorse per il Servizio Civile Universale che consenta un ampliamento e un’ulteriore qualificazione degli avvii di volontari, l’implementazione dei Corpi Civili di Pace, la creazione di un Istituto per la Pace e il Disarmo, la riconversione a fini civili dell’industria a produzione militare e di alcune servitù militari situate nelle aree più povere del territorio italiano per dar vita a progetti di sviluppo locale.</p>
           </div>
   <div id="scaricatab">
-                <span class="fa-stack">
+								<!--
+								<span class="fa-stack">
                   <a href="./rapporto2016/cooperazione.pdf"> <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i class="fa fa-download  fa-stack-1x fa-inverse"></i></span></a> 
-             
+                <i class="fa fa-download  fa-stack-1x fa-inverse"></i></span></a>
+
                 <a href="./rapporto2016/cooperazione.pdf" style="text-decoration: none" class="scarica">Scarica la sezione del Rapporto su Cooperazione, pace e disarmo</a>
-            </div>   
+								-->
+            </div>
         </div>
 
-      </div>    
+      </div>
 
 
       <div class="row clearfix">
@@ -152,15 +154,15 @@
           <div ex:role="viewPanel" style="padding: 0in;">
 
 
-            <div ex:role="exhibit-view" 
-            ex:viewClass="Exhibit.TabularView"  
-            ex:label="Table"  
-            ex:columns=".Sottocategoria,.label,.Entrate,.Spese"  
+            <div ex:role="exhibit-view"
+            ex:viewClass="Exhibit.TabularView"
+            ex:label="Table"
+            ex:columns=".Sottocategoria,.label,.Entrate,.Spese"
             ex:columnLabels="Categoria,Proposte,Entrate (mln di €),Uscite (mln di €)"
             ex:columnFormats="list,list"
             ex:sortColumn="0"
             ex:sortAscending="true"
-            ex:tableStyler="tableStyler"> 
+            ex:tableStyler="tableStyler">
             <div ex:role="exhibit-lens">
               <div class="table-responsive">
                 <table class="table" ex:class-content=".territorio">
@@ -171,7 +173,7 @@
                       <!-- Shows tip if Descrizione exists -->
                       <a ex:if-exists=".Descrizione" href="javascript:void(0);" ex:onmouseover-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', HEIGHT, -400,WIDTH, -800,OFFSETX, -200,OFFSETY, -50, CLICKSTICKY, true, STICKY, true, BGCOLOR,'',BORDERWIDTH,0,FONTSIZE,'12px')" onmouseout="UnTip()"><span ex:content=".label"></span></a>
                       <!-- only if Descrizione not exists -->
-                     
+
                       <!-- only if Descrizione not exists -->
                       <span ex:content="if(exists(.Descrizione), '',  .label)"></span>
                     </td>
@@ -182,9 +184,9 @@
               </div>
 
             </div>
-          </div> 
+          </div>
 <!-- <img src='http://lorempixel.com/400/200/technics/'> -->
-     
+
 
      </div>
 
@@ -202,7 +204,7 @@ Questo sito è stato realizzato e donato da <a href="http://ondata.it" target><i
 </div>
 <script>
 $(document).ready(function(){
-  $('[data-toggle="popover"]').popover();   
+  $('[data-toggle="popover"]').popover();
 });
 </script>
 </body>
