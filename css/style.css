@@ -198,21 +198,21 @@ font-weight:bold;
 }
 
 a.scarica {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #C50218 !important;
   font-weight: bold;
   font-size: 26px;
 margin-top:5px;
 }
 a.readmore
-{  font-family: 'Montserrat', sans-serif;
+{  font-family: 'Open Sans', sans-serif;
   color: #C50218 !important;font-size:21px;font-weight:normal!important	;}
 
 
 footer a {color:#C50218 !important;}
 footer p {margin:2px 0px; padding:2px 0px}
 footer i {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans",sans-serif;
     font-size: 14px;font-style:italic;}
 
 
@@ -267,8 +267,6 @@ span.fa-stack {
 }
 
 #scaricatab .fa-stack-1x, #scaricatab  .fa-stack-2x {
-    left: -10px;
-    top: -7px;
 }
 
 
@@ -620,7 +618,7 @@ h1.ambiente, h1.cooperazione {font-size:18px; line-height:40px;font-weight:bold;
 
 a.scarica {
     color: #c50218 !important;
-    font-family: "Montserrat",sans-serif;
+    font-family: "Open Sans",sans-serif;
     font-size: 20px;
 line-height:20px;	
     font-weight: bold;
