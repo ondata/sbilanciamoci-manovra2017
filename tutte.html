@@ -175,9 +175,9 @@
           <div ex:role="exhibit-view"
           ex:viewClass="Exhibit.TabularView"
           ex:label="Table"
-          ex:columns=".ID,.Categoria,.Sottocategoria,.label,.Entrate,.Spese"
-          ex:columnLabels="id,Categoria,Sottocategoria,Proposte,Entrate (mln di €),Uscite (mln di €)"
-          ex:columnFormats="number,list,list,list,list,list"
+          ex:columns=".Categoria,.Sottocategoria,.label,.Entrate,.Spese"
+          ex:columnLabels="Categoria,Sottocategoria,Proposte,Entrate (mln di €),Uscite (mln di €)"
+          ex:columnFormats="list,list,list,list,list"
           ex:sortColumn="0"
           ex:sortAscending="true"
           ex:tableStyler="tableStyler"
@@ -186,7 +186,7 @@
             <div class="table-responsive">
               <table class="table" ex:class-content=".territorio">
                 <tr>
-                  <td><span ex:content=".ID"></span></td>
+
                   <td><strong><span ex:content=".Categoria"></span></strong></td>
                   <td><span ex:content=".Sottocategoria"></span></td>
                   <!-- <td><a href="javascript:void(0);" ex:onclick-subcontent="Tip('<div class=\'tip\'><strong>Descrizione: </strong>{{.Descrizione}}</div>', WIDTH, 400,BGCOLOR,'',BORDERWIDTH,0)" onmouseout="UnTip()"><span ex:content=".label"><span ex:content=".label"></span></a></td> -->
